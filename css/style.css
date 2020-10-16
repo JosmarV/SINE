@@ -2,6 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
 }
 ::placeholder{
     font-size: 14px;
@@ -14,6 +16,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
+    border-radius: 2px;
     
 }
 .login-box .avatar{
@@ -26,6 +29,7 @@
     margin-top: 25%;
     padding: 0 0 20px;
     text-align: center;
+    font-size: 25px;
 }
 .login-box label{
     font-weight: bold;
@@ -39,7 +43,6 @@
 }
 .login-box input[type="text"].error, .login-box input[type="password"].error{
     border-color: #D32F2F;
-    place;
 }  
 .login-box input[type="text"], .login-box input[type="password"] {
     border: none;
@@ -73,3 +76,9 @@
 .login-box a:hover{
     color:rgb(161, 161, 161);
 }
+@media only screen and (max-width: 600px) {
+    .login-box{
+      border: none;
+    }
+  }
+  
